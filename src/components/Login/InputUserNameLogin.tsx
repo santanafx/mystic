@@ -1,8 +1,7 @@
-import React from 'react'
 import BasicInput from '../Inputs/BasicInput'
 
 export default function InputUserNameLogin() {
   return (
-    <BasicInput typeInput={"text"} inputName={"Username"} />
+    <BasicInput typeInputProp={"text"} inputNameProp={"Username"} widthProp={"200px"} heightProp={"50px"} />
   )
 }
