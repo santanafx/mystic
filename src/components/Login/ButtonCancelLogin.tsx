@@ -1,8 +1,7 @@
-import React from 'react'
 import BasicButton from '../Buttons/BasicButton'
 
 export default function ButtonCancelLogin() {
   return (
-    <BasicButton text={"Cancel"} />
+    <BasicButton textProp={"Cancel"} widthProp={"100px"} heightProp={"50px"} />
   )
 }
