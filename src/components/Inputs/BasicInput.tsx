@@ -1,7 +1,5 @@
-import React from 'react'
-
-export default function BasicInput({ typeInput, inputName }: { typeInput: string, inputName: string }) {
+export default function BasicInput({ typeInputProp, inputNameProp, widthProp, heightProp }: { typeInputProp: string, inputNameProp: string, widthProp: string, heightProp: string }) {
   return (
-    <input type={typeInput} placeholder={inputName} />
+    <input className='basicInputStyle' type={typeInputProp} placeholder={inputNameProp} style={{ width: widthProp, height: heightProp }} />
   )
 }
