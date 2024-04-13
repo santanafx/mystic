@@ -1,7 +1,5 @@
-import React from 'react'
-
-export default function BasicButton({ text }: { text: string }) {
+export default function BasicButton({ textProp, widthProp, heightProp }: { textProp: string, widthProp: string, heightProp: string }) {
   return (
-    <button>{text}</button>
+    <button className='basicButtonStyle' style={{ width: widthProp, height: heightProp }}>{textProp}</button>
   )
 }
