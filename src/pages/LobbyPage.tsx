@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Lobby() {
+export default function LobbyPage() {
   return (
     <div>Lobby</div>
   )
