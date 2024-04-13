@@ -1,8 +1,7 @@
-import React from 'react'
 import BasicButton from '../Buttons/BasicButton'
 
 export default function ButtonEnterLogin() {
   return (
-    <BasicButton text={"Enter"} />
+    <BasicButton textProp={"Enter"} widthProp={"100px"} heightProp={"50px"} />
   )
 }
