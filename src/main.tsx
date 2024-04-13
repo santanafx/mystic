@@ -19,7 +19,14 @@ const router = createBrowserRouter([{
 {
   path: "/matchMenu",
   element: <MatchMenu />,
+  children: [
+    {
+      path: "/matchMenu/:lobbyId",
+      element: <MatchMenu />
+    }
+  ],
   errorElement: <div>Error 404 not found</div>
+
 },
 ])
 
