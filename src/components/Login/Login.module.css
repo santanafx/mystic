@@ -1,3 +1,11 @@
 .loginContainer {
   position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
