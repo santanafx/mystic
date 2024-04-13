@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import "../src/global.css"
 import HomePage from './pages/HomePage'
-import Login from './pages/Login'
-import MatchMenu from './pages/MatchMenu'
+import LoginPage from './pages/LoginPage'
+import MatchMenuPage from './pages/MatchMenuPage'
 
 const router = createBrowserRouter([{
   path: "/",
@@ -13,16 +13,16 @@ const router = createBrowserRouter([{
 },
 {
   path: "/login",
-  element: <Login />,
+  element: <LoginPage />,
   errorElement: <div>Error 404 not found</div>
 },
 {
   path: "/matchMenu",
-  element: <MatchMenu />,
+  element: <MatchMenuPage />,
   children: [
     {
       path: "/matchMenu/:lobbyId",
-      element: <MatchMenu />
+      element: <MatchMenuPage />
     }
   ],
   errorElement: <div>Error 404 not found</div>
